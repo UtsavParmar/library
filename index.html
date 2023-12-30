@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Your Library</h1>
+        
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Features</a>
+                        <div class="dropdown-content">
+                            <a href="#wifi">24-Hour Wi-Fi</a>
+                            <a href="#water">24-Hour Water</a>
+                            <a href="#free-month">1 Month Free</a>
+                        </div>
+                    </li>
+                    <!-- Add an ID to the Register link -->
+                    <li id="registerBtn"><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="full-screen-image">
+        <img src="library-of-high-school-2021-09-24-03-29-02-utc.jpg" alt="Library Image" class="library-image">
+    </section>
+
+    <!-- The rest of your website content goes here -->
+    <div class="registration-form" id="registrationForm">
+        <span class="close-btn" onclick="closeRegistrationForm()">X</span>
+        <h2>Registration Form</h2>
+        <!-- Your registration form content goes here -->
+        <form>
+            <!-- Your form fields go here -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function openRegistrationForm() {
+            document.getElementById("registrationForm").style.display = "block";
+        }
+
+        function closeRegistrationForm() {
+            document.getElementById("registrationForm").style.display = "none";
+        }
+
+        // Add an event listener to the Register link
+        document.getElementById("registerBtn").addEventListener("click", openRegistrationForm);
+    </script>
+   
+</body>
+</html>

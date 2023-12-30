@@ -1,0 +1,107 @@
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #255906;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #3498db, #e74c3c); 
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #095f22;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration:wavy;
+}
+/* ... Your existing CSS ... */
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: #255906;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3498db;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #2c0404;
+}
+
+.dropdown-content a:hover {
+    background-color: #2980b9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.full-screen-image .library-image {
+    width: 100vw;
+    height: 1000px;
+    object-fit:cover;
+  
+   
+}
+.registration-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
